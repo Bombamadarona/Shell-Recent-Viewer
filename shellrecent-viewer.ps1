@@ -50,3 +50,4 @@ Get-ChildItem -Path $recentFolder -Filter *.lnk -ErrorAction SilentlyContinue |
 Write-Host ""
 Write-Host "Operazione completata con successo." -ForegroundColor Green
 Write-Host ""
+
