@@ -15,7 +15,7 @@ Write-Output "https://discord.gg/UET6TdxFUk"
 Write-Output "" 
 
 Write-Host "`n------------------------------------------" -ForegroundColor DarkGray
-Write-Host "     RILEVAMENTO RETE: VPN / PROXY"
+Write-Host "            SHELL:RECENT VIEWER"
 Write-Host "------------------------------------------`n" -ForegroundColor DarkGray
 Write-Output "" 
 Write-Host " Elenco dei file aperti di recente tramite Shell:Recent"
@@ -55,6 +55,7 @@ Get-ChildItem -Path $recentFolder -Filter *.lnk -ErrorAction SilentlyContinue |
 Write-Host ""
 Write-Host "Operazione completata con successo." -ForegroundColor Green
 Write-Host ""
+
 
 
 
