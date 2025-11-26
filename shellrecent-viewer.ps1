@@ -21,7 +21,7 @@ Write-Output ""
 Write-Host " Elenco dei file aperti di recente tramite Shell:Recent"
 Write-Host ""
 Write-Host " Percorso: $recentFolder"
-Write-Host " Ora attuale: $(Get-Date).ToString('dd/MM/yyyy HH:mm:ss')"
+Write-Host " Ora attuale:" $(Get-Date).ToString('dd/MM/yyyy HH:mm:ss')
 Write-Host ""
 Write-Host "------------------------------------------------------------------------"
 
@@ -55,6 +55,7 @@ Get-ChildItem -Path $recentFolder -Filter *.lnk -ErrorAction SilentlyContinue |
 Write-Host ""
 Write-Host "Operazione completata con successo." -ForegroundColor Green
 Write-Host ""
+
 
 
 
