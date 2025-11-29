@@ -42,12 +42,12 @@ Get-ChildItem -Path $recentFolder -Filter *.lnk -ErrorAction SilentlyContinue |
 
         if (![string]::IsNullOrEmpty($targetPath)) {
             if (Test-Path $targetPath) {
-                Write-Host "[FOUND] File esistente" -ForegroundColor Green
+                Write-Host "[V] File esistente" -ForegroundColor Green
                 Write-Host "  - Percorso : $targetPath" -ForegroundColor Yellow
                 Write-Host "  - Modifica : $writeTime" -ForegroundColor DarkCyan
                 Write-Host "  - Accesso  : $accessTime" -ForegroundColor DarkCyan
             } else {
-                Write-Host "[NOT FOUND] File NON trovato" -ForegroundColor Red
+                Write-Host "[X] File NON trovato" -ForegroundColor Red
                 Write-Host "  - Percorso : $targetPath" -ForegroundColor DarkRed
                 Write-Host "  - Modifica : $writeTime" -ForegroundColor DarkCyan
                 Write-Host "  - Accesso  : $accessTime" -ForegroundColor DarkCyan
@@ -63,5 +63,6 @@ Write-Host ("-" + ("=" * ($totalWidth - 2)) + "-") -ForegroundColor DarkGray
 Write-Host ("|" + (" " * $padding) + $footerText + (" " * ($totalWidth - 2 - $padding - $footerText.Length)) + "|") -ForegroundColor DarkGray
 Write-Host ("-" + ("=" * ($totalWidth - 2)) + "-") -ForegroundColor DarkGray
 Write-Host ""
+
 
 
