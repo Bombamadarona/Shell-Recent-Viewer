@@ -21,7 +21,7 @@ $padding = [math]::Floor(($totalWidth - $headerText.Length) / 2)
 Write-Host ("-" + ("=" * ($totalWidth - 2)) + "-") -ForegroundColor DarkGray
 Write-Host ("|" + (" " * $padding) + $headerText + (" " * ($totalWidth - 2 - $padding - $headerText.Length)) + "|") -ForegroundColor DarkGray
 Write-Host ("-" + ("=" * ($totalWidth - 2)) + "-") -ForegroundColor DarkGray
-Write-Host ""
+$recentFolder = [Environment]::GetFolderPath("Recent")
 
 Write-Host "[LIST] Elenco dei file aperti di recente tramite Shell:Recent" -ForegroundColor Cyan
 Write-Host "Percorso cartella: $recentFolder" -ForegroundColor Yellow
@@ -63,7 +63,3 @@ Write-Host ("-" + ("=" * ($totalWidth - 2)) + "-") -ForegroundColor DarkGray
 Write-Host ("|" + (" " * $padding) + $footerText + (" " * ($totalWidth - 2 - $padding - $footerText.Length)) + "|") -ForegroundColor DarkGray
 Write-Host ("-" + ("=" * ($totalWidth - 2)) + "-") -ForegroundColor DarkGray
 Write-Host ""
-
-
-
-
